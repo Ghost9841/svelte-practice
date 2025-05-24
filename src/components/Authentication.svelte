@@ -54,11 +54,13 @@
         {#if register}
             <div class="">
                 <p class="">Already have an account?</p>
+                <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
                 <p on:click={handleRegister}  on:keydown={()=>{}}>Login</p>
             </div>
         {:else}
             <div class="">
                 <p class="">Don't have an account?</p>
+                <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
                 <p on:click={handleRegister}  on:keydown={()=>{}}>Register</p>
             </div>
         {/if}
